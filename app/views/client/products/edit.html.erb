@@ -1,0 +1,25 @@
+<%= form_tag "client/products", method: :post do %>
+
+  <div>
+    Name: <input type="text" name="name" value="<%= @product["name"] %>">
+  </div>
+
+  <div>
+    Price: <input type="text" name="price" value="<%= @product["price"] %>">
+  </div>
+
+  <div>
+    Instock: <input type="text" name="instock" value="<%= @product["instock"] %>">
+  </div>
+
+  <div>
+    Description: <input type="text" name="description" value="<%= @product["description"] %>">
+  </div>
+    
+  <div>
+      Supplier_Id: <input type="text" name="supplier_id" value="<%= @product["supplier_id"] %>">
+  </div>
+
+  <input type="submit" value="Update Product">
+  
+<% end %>
